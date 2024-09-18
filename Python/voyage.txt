@@ -1,6 +1,3 @@
-from encryption import encrypt, decrypt
-
-message = """
 In the vast and endless seas of space,
 Where stars in clusters find their place,
 A ship sails forth, its course unknown,
@@ -50,15 +47,3 @@ So sail on, voyager of light,
 Through endless day and endless night,
 For time is yours to understand,
 A voyage grand, through space unplanned.
-"""
-
-key = "1234abcd5678efgh"
-
-print(f'Message: {message}')
-print(f'Key: {key}')
-
-ct = encrypt(message, key)
-print(f'Encrypted: {ct}')
-
-pt = decrypt(ct, key)
-print(f'Decrypted: {pt}')

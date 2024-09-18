@@ -5,22 +5,21 @@ def encrypt(pt: str, key: str):
     res = ''
 
     for c in pt:
-        if c == 'r':
-            print(f'keyIndex: {keyIndex}, char {c}')
         # if even, invert the bits of the byte
         even = ord(key[keyIndex]) % 2 == 0
         if even:
             res += chr((ord(c) ^ 0x7f) % 128)
+            print(f'[encrypt] * {c} -> {res[-1]} INVERT')
 
         # otherwise, add the ascii value of the key's current char and make that the new character
         else:
             res += chr((ord(c) + ord(key[keyIndex])) % 128)
+            print(f'[encrypt] * {c} -> {res[-1]} ADD')
 
         # increment the key index and wrap if it exceeds the key length
         keyIndex += 1
         if keyIndex > KEY_SIZE-1:
             keyIndex = 0
-        print(f'[encrypt] * {c} -> {res[-1]}')
     return res
 
 def decrypt(ct: str, key: str):
