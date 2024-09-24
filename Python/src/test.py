@@ -1,4 +1,5 @@
 from encryption import encrypt, decrypt
+from .keygen import keygen
 
 message = """
 In the vast and endless seas of space,
@@ -52,7 +53,7 @@ For time is yours to understand,
 A voyage grand, through space unplanned.
 """
 
-key = "1234abcd5678efgh"
+key = keygen()
 
 print(f'Message: {message}')
 print(f'Key: {key}')
