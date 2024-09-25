@@ -6,4 +6,4 @@ python3 main.py -k example_key -e -i asyoulik.txt -o example_encrypted.txt
 sleep 1
 python3 main.py -k example_key -d -i example_encrypted.txt -o example_decrypted.txt
 sleep 1
-diff example.txt example_decrypted.txt
+diff asyoulik.txt example_decrypted.txt
