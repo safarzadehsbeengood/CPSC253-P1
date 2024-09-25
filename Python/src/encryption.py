@@ -1,4 +1,4 @@
-KEY_SIZE = 16                   # # of bytes in the key
+KEY_SIZE = 64                   # # of bytes in the key
 CR_PLACEHOLDER = chr(255)       # extended ascii character we'll use to account for special characters (when the encrypted character is a carriage return)
 SPECIAL_DELIMITER = chr(254)    # the delimiter we'll use for appending special characters to the end of the encrypted text
 
@@ -6,10 +6,8 @@ from sys import exit, argv
 
 def encrypt(pt: str, key: str):
     '''
-    Will convert plaintext to a ciphertext using a 16-byte alphanumeric key.
+    Will convert plaintext to a ciphertext using a 64-byte alphanumeric key.
     '''
-    if not (key.isalnum() and len(key) == 16):
-        exit(f"({argv[0]}) - ERR: Invalid key! Please use a 16-character alphanumeric key.")
     keyIndex = 0
     res = ''
     special_chars = ''
