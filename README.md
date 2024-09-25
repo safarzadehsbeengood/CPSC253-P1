@@ -1,6 +1,7 @@
-# Encryption and Decryption Pseudocode
+# CPSC253 Project 1 (Encryption Algorithm)
+### Author: Ryan Safarzadeh
 
-This document provides a pseudocode explanation for a Python-based encryption and decryption system that uses a 16-byte alphanumeric key. The system handles special characters like carriage returns by appending them to the end of the ciphertext.
+This document provides a pseudocode explanation for an encryption and decryption system that uses a 16-byte alphanumeric key. 
 
 ## Constants
 
