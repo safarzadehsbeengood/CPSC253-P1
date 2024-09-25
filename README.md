@@ -5,8 +5,6 @@ This document provides a pseudocode explanation for an encryption and decryption
 
 ---
 
-![A mockup of the algorithm](./pics/mockup.png)
-
 ## Constants
 
 - **`KEY_SIZE = 64`**: The size of the key is 64 bytes.
