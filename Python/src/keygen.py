@@ -1,5 +1,8 @@
 from random import choice
 
+def is_valid_key(key: str):
+    return key.isalnum() and len(key) == 16
+
 def keygen():
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     alphabet += alphabet.upper() + '1234567890'
