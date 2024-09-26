@@ -1,11 +1,12 @@
 
 # Python Encryption/Decryption Program
 
-This program allows you to encrypt and decrypt text using a 64-character alphanumeric key.
+This program allows you to encrypt and decrypt plaintext files using a 64-character alphanumeric key.
 
 ## Features
 - **Encrypt plaintext** using a 64-character alphanumeric key.
 - **Decrypt ciphertext** back into the original plaintext using the same key.
+- **Generate a key** by writing to a file or by printing to the terminal.
 
 ## Installation
 
