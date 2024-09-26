@@ -22,6 +22,15 @@ This program allows you to encrypt and decrypt text using a 64-character alphanu
 ## Usage
 
 Once you've installed the program, you can run it to either encrypt or decrypt text.
+
+### Interactive
+To use the interactive script, you can run the program with no arguments:
+```bash
+python3 main.py
+```
+
+### CLI Tool
+To encrypt, decrypt, or generate a key in one command, you can pass in arguments:
 ```bash
 usage: main.py [-h] [-g] [-k <file>] [-e] [-d] [-i <file>] [-o <file>]
 
