@@ -1,8 +1,13 @@
 import argparse
+import sys
 
 # verify text files
 def is_text_file(file: str):
     return file.endswith(".txt")
+
+# check if any arguments were passed
+def args_passed():
+    return len(sys.argv) > 1
 
 # verify flags from CLI
 def verify_args(args):
@@ -32,4 +37,4 @@ def argparse_gen():
     parser.add_argument('-i', '--input_file', metavar='<file>', type=str, required=False, help="path to an input file")
     parser.add_argument('-o', '--output_file', metavar='<file>', type=str, required=False, help="path to an output file")
 
-    return parser.parse_args()
+    return parser
