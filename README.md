@@ -29,6 +29,17 @@ This program allows you to encrypt and decrypt plaintext files using a 64-charac
 
 Once you've installed the program, you can run it to either encrypt or decrypt text.
 
+## Key Generation
+Before encrypting and decrypting, you must generate a key through the CLI tool. There are two ways to do this:
+1. Print one to the screen: 
+```bash
+python3 main.py -g
+```
+2. Save the key to a file: 
+```bash
+python3 main.py -g -o <output_file>
+```
+
 ### Interactive
 To use the interactive script, you can run the program with no arguments:
 ```bash
