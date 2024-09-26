@@ -3,6 +3,8 @@
 
 ---
 
+Required:
+- Python 3.6 or higher
 
 This program allows you to encrypt and decrypt plaintext files using a 64-character alphanumeric key.
 
