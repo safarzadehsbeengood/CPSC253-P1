@@ -27,6 +27,9 @@ def main():
                 print("> [using random key]")
             else:
                 key = get_key_from_file(key)
+                if not key:
+                    print("key from file is not valid!")
+                    return
             if choice == '1':
                 encrypt_file(input_file, output_file, key)
                 print(f'{input_file} encrypted to {output_file} with key {key}.')

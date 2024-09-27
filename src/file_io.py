@@ -5,6 +5,8 @@ def get_key_from_file(filename: str):
     try:
         with open(filename, 'r') as keyfile:
             key = keyfile.read()
+            # filter out any non-alnum chars (file i/o and copy/paste problems)
+            key = ''.join([c for c in key if c.isalnum()])
             return key if is_valid_key(key) else False
     except FileNotFoundError:
         print(f"(get_key_from_file) Error: file {keyfile} not found!")
